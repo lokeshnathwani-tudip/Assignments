@@ -1,0 +1,26 @@
+<html>
+
+<head>
+<script type="text/javascript">
+function validate(){
+    x=document.myForm
+    input=x.myInput.value
+    if (input.length>5){
+        alert("The field cannot contain more than 5 characters!")
+        return false
+    }else {
+        return true
+    }
+}
+</script>
+</head>
+
+<body>
+<form name="myForm" action="http://www.java2s.com" onsubmit="return validate()">
+Enter some text (less than 5 characters):
+<input type="text" name="myInput" size="20">
+<input type="submit" value="Submit">
+</form>
+</body>
+
+</html>
